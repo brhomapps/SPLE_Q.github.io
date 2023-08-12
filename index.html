@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SPLE Q</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+
+    <header>    
+        <h1 class= "title">SPLE Q</h1>
+        <ul class="score-time">
+          <li id="currentScore"></li>
+          <li class="timer-count"></li>
+        </ul>
+    </header>
+
+    <main>
+      <section id="introCard" style="display: block">
+        <h2 class= "instructions">How much do you actually know? <br> <br> Your correct answers will add 1 point to your Score. <br>Beware - Your wrong answers will deduct time from the timer! </h2> 
+        <button class="btn start-button">Start Quiz</button>  
+      </section> 
+
+      <section id="card" style="display: none">
+        <div id="question"></div>
+          <ul class="list">
+              <button class="choice" id="A" onclick="A"></button>
+              <button class="choice" id="B" onclick="B"></button>
+              <button class="choice" id="C" onclick="C"></button>
+              <button class="choice" id="D" onclick="D"></button>
+          </ul>
+        <div class="responseNext">
+          <p id="response" style="display: none"></p>
+          <button class="btn nextButton" style="display: none">Click for <br> Next Question</button>
+        </div>
+      </section> 
+
+      <section id="cardEndQuiz" style="display: none">
+        <h1 id="greeting"></h1>
+        <h2 id="instruct"></h2>
+        <form id="myForm" onsubmit="return false;">
+          <textarea type="text" id="userInput" placeholder="Enter your initials here" ></textarea>
+        </form>
+        <div class="options">
+          <button class="btn saveButton" style="display: block">Save My Score</button>
+          <button class="btn viewAllHighScores" style="display: none">View All Scores</button>
+          <button class="btn tryAgainButton" style="display: none">Try Quiz Again</button>
+        </div>
+      </section>
+
+      <section id="cardHighScores" style="display: none;">
+        <ul class="highScoresList">
+        </ul>
+        <div>
+          <button class="btn tryAgainButton2">Try Quiz Again</button>
+          <button class="btn clearHighScores">Clear High Scores</button>
+        </div>
+        </section>
+
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

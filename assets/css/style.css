@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+  }
+
+:root {
+    --dark: rgb(36, 131, 155);
+    --light: rgb(230, 243, 248);
+    --offWhite: rgb(249, 246, 250);
+    --hoverShadow: rgb(216, 170, 233);
+    --gray: rgb(141, 150, 145);
+    --redBtn: rgb(185, 88, 88);
+    --greenBtn: rgb(98, 163, 114);
+    --yellowBtn: rgba(247, 247, 173, 0.959);
+    }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(0deg, var(--dark) 0%, var(--light) 70%);
+  }
+
+  header,
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  header{
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 4rem;
+    color: var(--dark);
+    margin: 10px;
+    border-radius: 8px;
+    border-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+  }
+
+  .score-time {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 0 5rem;
+    flex-wrap: wrap;
+  }
+
+  #introCard {
+    width: 80%;
+    text-align: center;
+  }
+
+  .instructions {
+    color: var(--gray);
+    font-size: 1rem;
+    text-align:center;
+    flex-wrap: wrap;
+  }
+
+  .btn{
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    letter-spacing: 0.21px;
+    padding: 5px 15px;
+    margin: 15px 0px;
+    border: 2px solid black;
+  }
+
+  .start-button {
+    color: var(--offWhite);
+    background-color: var(--dark);
+    margin-top: 0.6em;  
+  }
+
+  #card {
+    background-color:var(--offWhite);
+    border: solid 4px var(--dark);
+    border-radius: 20px;
+    /* flex-direction: column;
+    text-align: left;
+    align-items: center; */
+    margin: 1rem;
+  }
+
+  #question {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .list {
+    text-align: center;
+    font-weight: bold;
+    margin: 1vh;
+    padding-inline-start: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .choice {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: 1rem 3rem 0px 0px;
+    line-height: 2rem;
+  }
+
+  .responseNext{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  #response {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .nextButton{
+    color: var(--offWhite);
+    background-color: var(--dark);
+    font-size: 1rem;
+  }
+
+  #cardEndQuiz {
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--offWhite);
+    border: solid 2px var(--dark);
+    border-radius: 25px;
+    text-align: center;
+    padding: 2vw;
+    margin: 5% 10%;
+  }
+
+  .saveButton{
+    color: var(--offWhite);
+    background-color: var(--greenBtn);
+  }
+
+  #greeting,
+  #instruct,
+  h3{
+    font-size: 1rem;
+  }
+
+  textarea {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .options{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+
+  .tryAgainButton{
+    color: var(--offWhite);
+    background-color: var(--redBtn);
+    font-size: 1rem;
+    margin: 0px 10px;
+  }
+
+  .viewAllHighScores {
+    color: black;
+    background-color: var(--yellowBtn);
+    font-size: 1rem;
+    margin: 0px 10px;
+  }
+
+  #cardHighScores {
+    align-items: center;
+    background-color:var(--offWhite);
+    border: solid 2px var(--dark);
+    border-radius: 25px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 5%;
+  }
+
+  .highScoresList {
+    font-size: 1rem;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .highScoresList li {
+    padding: 5px;
+    line-height: 1rem;
+    border-bottom: dashed 1px gray;
+  }
+  
+  .clearHighScores {
+    color: var(--offWhite);
+    background-color: var(--redBtn);
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  .tryAgainButton2 {
+    color: var(--offWhite);
+    background-color: var(--greenBtn);
+    font-size: 1rem;
+    margin: 10px;
+  }
+
+  /* ----- PSUEDO SELECTORS ----- */
+
+  @media screen and (max-width: 318px) {
+    body {
+        font-size: larger;
+    }
+}
